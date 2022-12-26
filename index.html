@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư mời tự động</title>
+    <link rel="icon" type="image/x-icon" href="/asset/favicon.ico">
+    <link rel="stylesheet" href="./asset/style.css">
+    <script src="./asset/html2canvas.js"></script>
+</head>
+<body>
+<main>
+    <div class="container">
+        <h1 class="title">Thư mời tự động</h1>
+        <!-- input -->
+        <div class="form">
+            <input type="text" placeholder="Nhập tên" value="Ms. Trương Thị Tú Quyên" class="input__name">
+            <input type="file" accept="image/*" id="input__img" hidden onchange="preview()">
+            <label for="input__img" class="btn">Upload Avatar</label>
+        </div>
+
+        <!-- preview -->
+        <div class="invite" id="boundary">
+            <img src="./asset/invite_layout.png" class="invite__img">
+            <div class="invite__preview">
+                <img src="asset/avt.jpg" id="output"/>
+            </div>
+            <p class="invite__name"></p>
+        </div>
+
+
+        <!-- control -->
+        <div class="control">
+            <div class="control-item">
+                <label for="input__zoom">Zoom</label>
+                <input type="range" id="input__zoom" class="progress zoom" min="0.01" max="2" value="0.01" step="0.01">
+            </div>
+
+            <div class="control-item">
+                <label for="input__x">Chiều ngang</label>
+                <input type="range" id="input__x" class="progress horizontal" min="0" max="1" value="0.5" step="0.01">
+            </div>
+
+            <div class="control-item">
+                <label for="input__y">Chiều dọc</label>
+                <input type="range" id="input__y" class="progress vertical" min="0" max="1" value="0.5" step="0.01">
+            </div>
+
+            <div class="download">
+                <a id="download__link" hidden></a>
+                <button class="btn btn--lg" id="download__btn">Tải về</button>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="./asset/fittext.js"></script>
+<script src="./asset/script.js"></script>
+</body>
+</html>
