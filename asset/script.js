@@ -68,8 +68,6 @@ async function download() {
 
 
     const config = {
-        windowWidth: 2048,
-        windowHeight: 1000,
         backgroundColor: null
     }
     try {
