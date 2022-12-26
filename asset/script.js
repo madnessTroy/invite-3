@@ -73,9 +73,9 @@ async function download() {
         backgroundColor: null
     }
     try {
-        showName.style.bottom = '52%'
+        showName.style.top = '52%'
         const canvas = await html2canvas(target, config)
-        showName.style.bottom = '57%'
+        showName.style.top = '57%'
 
         // Download section
         const base64image = canvas.toDataURL('image/png')
