@@ -173,7 +173,7 @@ body {
 .invite__preview {
     position: absolute;
     width: 50%;
-    /* height: 50%; */
+    height: 50%;
     top: 9%;
     left: 28%;
     z-index: -1;
